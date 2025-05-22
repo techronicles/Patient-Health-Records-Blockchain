@@ -1,19 +1,5 @@
 // This is the main entry point for the React application.
 import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-        
-          
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import { Button, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/index.js';
@@ -31,9 +17,19 @@ function userForm() {
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Patient_Name</Form.Label>
           <Form.Control type="text" placeholder="Enter Patient Name" />
-
         </Form.Group>
-
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Patient_Age</Form.Label>
+          <Form.Control type="number" placeholder="Enter Patient Age" />
+        </Form.Group>
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Patient_Diagnosis</Form.Label>
+          <Form.Control type="text" placeholder="Enter Patient diagnosis" />
+        </Form.Group>
+         <Form.Group controlId="formBasicEmail">
+          <Form.Label>Patient_Treatment</Form.Label>
+          <Form.Control type="text" placeholder="Enter Patient treatment" />
+        </Form.Group>
         <Form.Group controlId="formBasicPassword">
     <Form.Label>Doctor_Name</Form.Label>
     <Form.Control type="text" placeholder="Enter Doctor Name" />
